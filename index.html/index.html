@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingliz Tili Testlar to'plami</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --duo-green: #58cc02;
+            --duo-dark-green: #46a302;
+            --duo-text: #4b4b4b;
+            --duo-gray: #afafaf;
+            --bg-white: #ffffff;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            background-color: var(--bg-white);
+            color: var(--duo-text);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Navbar qismi */
+        nav {
+            width: 100%;
+            max-width: 1100px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e5e5e5;
+        }
+
+        .logo {
+            color: var(--duo-green);
+            font-size: 28px;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        /* Asosiy Hero qismi */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            gap: 40px;
+        }
+
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .hero-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 35px;
+        }
+
+        .features li {
+            font-size: 19px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .features li i {
+            color: var(--duo-green);
+            margin-right: 15px;
+            font-size: 24px;
+        }
+
+        /* Duolingo uslubidagi tugma */
+        .btn-test {
+            display: inline-block;
+            background-color: var(--duo-green);
+            color: white;
+            text-decoration: none;
+            padding: 16px 40px;
+            border-radius: 16px;
+            font-weight: 800;
+            font-size: 18px;
+            text-transform: uppercase;
+            border-bottom: 5px solid var(--duo-dark-green);
+            transition: all 0.1s;
+            cursor: pointer;
+            box-shadow: 0 4px 0 rgba(0,0,0,0.1);
+        }
+
+        .btn-test:active {
+            transform: translateY(4px);
+            border-bottom-width: 0px;
+        }
+
+        /* Adminlar qismi */
+        .admin-section {
+            width: 100%;
+            max-width: 1100px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .admin-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .admin-link {
+            text-decoration: none;
+            color: var(--duo-text);
+            border: 2px solid #e5e5e5;
+            padding: 15px;
+            border-radius: 15px;
+            font-weight: 700;
+            transition: 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .admin-link:hover {
+            background-color: #f7f7f7;
+            border-color: var(--duo-green);
+        }
+
+        .admin-number {
+            background: var(--duo-green);
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; text-align: center; }
+            .hero { text-align: center; }
+            .features li { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">INGLIZ TILI TEST</a>
+        <div style="font-weight: 700; color: var(--duo-gray);">20,527 followers</div>
+    </nav>
+
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Ingliz tilini istalgan vaqtda, istalgan joyda mustahkamlang</h1>
+            
+            <ul class="features">
+                <li><i class="fas fa-check-circle"></i> Har kuni yangi testlar</li>
+                <li><i class="fas fa-check-circle"></i> Darhol natijalarni bilish</li>
+                <li><i class="fas fa-check-circle"></i> 100% bepul va qiziqarli</li>
+            </ul>
+
+            <a href="https://t.me/ingiliz_quizd" class="btn-test">TESTNI ISHLASH</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1973&auto=format&fit=crop" alt="Learning English">
+        </div>
+    </main>
+
+    <section class="admin-section">
+        <h2 style="font-weight: 800;">Bizning Adminlar</h2>
+        <div class="admin-grid">
+            <a href="https://t.me/soipovaaa_o" class="admin-link"><span class="admin-number">1</span> K.</a>
+            <a href="https://t.me/amerikankaaaaaa" class="admin-link"><span class="admin-number">2</span> amerikanka</a>
+            <a href="https://t.me/Bgzdv_c" class="admin-link"><span class="admin-number">3</span> asosiy adminka</a>
+            <a href="https://t.me/sfrbyvw" class="admin-link"><span class="admin-number">4</span> A/S</a>
+            <a href="https://t.me/guli_210210" class="admin-link"><span class="admin-number">5</span> Guli</a>
+            <a href="https://t.me/z_1lolaa" class="admin-link"><span class="admin-number">6</span> Zilola</a>
+            <a href="https://t.me/nozline" class="admin-link"><span class="admin-number">7</span> Nozima</a>
+            <a href="https://t.me/asalim_04_09" class="admin-link"><span class="admin-number">8</span> Leyana</a>
+            <a href="https://t.me/ummatmz" class="admin-link"><span class="admin-number">9</span> Hojiakbar</a>
+            <a href="https://t.me/turaqulovbehruzr" class="admin-link"><span class="admin-number">10</span> MR.Creator</a>
+        </div>
+    </section>
+
+    <footer style="margin: 40px 0; color: var(--duo-gray); font-weight: 700;">
+        
+    </footer>
+
+</body>
+</html>
